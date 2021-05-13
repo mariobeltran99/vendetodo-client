@@ -64,7 +64,7 @@ export class AppComponent implements OnInit {
       ]
       };
     });
-    this.api.gerProductsRating().subscribe(datas2 => {
+    this.api.getProductsRating().subscribe(datas2 => {
       let ratings:Rating[] = [];
       let links:string[] = [];
       let numberRating:number[] = [];

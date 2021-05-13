@@ -20,7 +20,7 @@ export class ApiService {
     let dir = this.url + "/usuariosJson"
     return this.http.get<Users[]>(dir);
   }
-  gerProductsRating():Observable<Rating[]>{
+  getProductsRating():Observable<Rating[]>{
     let dir = this.url + "/valoracionesJson"
     return this.http.get<Rating[]>(dir);
   }
